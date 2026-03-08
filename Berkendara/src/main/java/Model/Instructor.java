@@ -9,5 +9,16 @@ package Model;
  * @author acer
  */
 public class Instructor {
+    public String instructorName;
+    private String instructorNIK;
     
+    public Instructor(String instructorName, String instructorNIK){
+        this.instructorName = instructorName;
+        this.instructorNIK = instructorNIK;
+    }
+    
+    public void giveExamClearance(Student student){
+        student.setExamClearance(true);
+        System.out.println("Instructor " + instructorName + " give an exam clearance to student " + student.studentName);
+    }
 }
