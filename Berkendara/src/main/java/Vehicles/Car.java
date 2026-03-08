@@ -8,6 +8,19 @@ package Vehicles;
  *
  * @author acer
  */
-public class Car {
+public class Car extends Vehicle{
+    public Car(String brandName, String serialNumber, int tankCapacity) {
+        super(brandName, serialNumber, tankCapacity);
+    }
+
+    @Override
+    public void turnMachineOn() {
+        System.out.println("This car is ready for a ride!");
+    }
+
+    @Override
+    public void horn() {
+        System.out.println("Din din!!");
+    }
     
 }

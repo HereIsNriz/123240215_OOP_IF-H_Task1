@@ -8,6 +8,19 @@ package Vehicles;
  *
  * @author acer
  */
-public class Bus {
+public class Bus extends Vehicle{
+    public Bus(String brandName, String serialNumber, int tankCapacity) {
+        super(brandName, serialNumber, tankCapacity);
+    }
+
+    @Override
+    public void turnMachineOn() {
+        System.out.println("This bus is ready for a ride!");
+    }
+
+    @Override
+    public void horn() {
+        System.out.println("Duun duun!!");
+    }
     
 }
