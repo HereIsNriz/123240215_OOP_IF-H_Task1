@@ -32,6 +32,14 @@ public class Student {
         return this.studentNIK;
     }
     
+    public int getNumOfTrainingSession(){
+        return this.numOfTrainingSession;
+    }
+    
+    public boolean getExamClearance(){
+        return this.examClearance;
+    }
+    
     public void setExamClearance(boolean examClearance){
         this.examClearance = examClearance;
     }
